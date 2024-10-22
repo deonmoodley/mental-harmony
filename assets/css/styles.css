@@ -19,4 +19,30 @@ body {
     padding: 10px 15px; /* Adds padding around the links */
   }
   
- 
+  /* Hover effect for navigation links */
+  .navbar-nav .nav-link:hover {
+    color: #007BFF; /* Changes color to Bootstrap's primary blue when hovered */
+  }
+  
+  /* Margin between the cards in the tips section */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Footer styling */
+  footer {
+    background-color: #343a40; /* Dark gray background for the footer */
+    color: white; /* White text for contrast */
+    padding: 20px 0; /* Adds padding to the top and bottom */
+  }
+  
+  /* Styles for footer buttons (resource links) */
+  footer a {
+    margin: 10px;
+    text-decoration: none; /* Removes default underline from links */
+  }
+  
+  footer a:hover {
+    background-color: #0056b3; /* Darker blue background on hover */
+    color: white; /* Keeps the text white on hover */
+  }
