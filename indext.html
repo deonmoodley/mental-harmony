@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Meta tags for responsiveness -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Harmony</title>
+  <!-- Meta tags for mobile responsiveness and character encoding -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Webpage title -->
+  <title>Mental Harmony</title>
 
-    <!-- Link to the external CSS file -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Bootstrap CDN link for styles and responsiveness -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-    <!-- Google Fonts for typography -->
-    <link href="https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap" rel="stylesheet">
+  <!-- Linking to the custom CSS file for styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Including Bootstrap 4.1.3 CSS for responsive design -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  
+  <!-- Google Fonts for typography -->
+  <link href="https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  
+  <!-- Navigation Bar Section -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Navbar brand for the website title -->
+    <a class="navbar-brand" href="#">Mental Harmony</a>
+    
+    <!-- Toggler for mobile view (hamburger icon) -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <!-- Collapsible menu for navigation links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <!-- Links to different sections of the page -->
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tips">Mental Health Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Mental Harmony</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#tips">Mental Health Tips</a></li>
-                <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
-            </ul>
-        </div>
-    </nav>
+  <!-- Hero Section with Bootstrap Jumbotron -->
+  <section id="hero" class="jumbotron text-center" style="background-color: #b3e5fc;">
+    <!-- Main heading for the hero section -->
+    <h1 class="display-4">Welcome to Mental Harmony</h1>
+    <!-- Brief introductory description -->
+    <p class="lead">Your peace of mind starts here. Learn how to manage your mental health.</p>
+  </section>
