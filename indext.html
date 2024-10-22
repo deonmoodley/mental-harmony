@@ -9,16 +9,17 @@
     <!-- Webpage title -->
     <title>Mental Harmony</title>
 
-
-
     <!-- Including Bootstrap 4.1.3 CSS for responsive design -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Linking to the custom CSS file for styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
     <!-- Google Fonts for typography -->
     <link href="https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap" rel="stylesheet">
-
-        <!-- Linking to the custom CSS file for styles -->
-        <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -56,32 +57,35 @@
     </section>
 
     <!-- Mental Health Tips Section -->
-    <section id="tips" class="container-fluid py-5 card-container">
+    <section id="tips" class="container py-5">
         <div class="row">
-            <!-- Card 1: Tip about taking breaks -->
+            <!-- Card 1: Take Breaks -->
             <div class="col-md-4">
                 <div class="card shadow-sm border-0 rounded-lg">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                        <i class="fas fa-pause-circle fa-3x text-primary mb-3"></i> <!-- Font Awesome icon -->
                         <h5 class="card-title">Take Breaks</h5>
                         <p class="card-text">Regular breaks can help clear your mind and reduce stress.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2: Tip about exercising -->
+            <!-- Card 2: Exercise -->
             <div class="col-md-4">
                 <div class="card shadow-sm border-0 rounded-lg">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                        <i class="fas fa-dumbbell fa-3x text-primary mb-3"></i> <!-- Font Awesome icon -->
                         <h5 class="card-title">Exercise</h5>
                         <p class="card-text">Physical activity can boost your mood and reduce anxiety.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3: Tip about staying connected -->
+            <!-- Card 3: Stay Connected -->
             <div class="col-md-4">
                 <div class="card shadow-sm border-0 rounded-lg">
-                    <div class="card-body">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i> <!-- Font Awesome icon -->
                         <h5 class="card-title">Stay Connected</h5>
                         <p class="card-text">Talking to friends and family can help you feel supported.</p>
                     </div>
@@ -93,10 +97,13 @@
     <!-- Footer Section with resources and motivational quotes -->
     <footer id="resources" class="footer mt-auto py-3 bg-dark">
         <div class="container text-center text-light">
+            <!-- Title for external resources section -->
             <p>Mental Health Resources:</p>
+            <!-- Links to external mental health resources, styled as Bootstrap buttons -->
             <a href="https://www.mind.org.uk/" target="_blank" class="btn btn-primary">Mind</a>
             <a href="https://www.nhs.uk/mental-health/" target="_blank" class="btn btn-primary">NHS Mental Health</a>
 
+            <!-- Motivational quote -->
             <blockquote class="blockquote text-center mt-3">
                 <p class="mb-0">"You are stronger than you think."</p>
                 <footer class="blockquote-footer">Anonymous</footer>
