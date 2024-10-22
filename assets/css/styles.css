@@ -1,5 +1,4 @@
 /* --- Global Styles --- */
-
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     background-color: #f5f5f5;
@@ -7,8 +6,10 @@ body {
     padding: 0;
 }
 
-/* Styling for headings */
-h1, h2, h3 {
+/* Heading styles */
+h1,
+h2,
+h3 {
     font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
 
@@ -35,9 +36,8 @@ nav a:hover {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 80px 20px;
+    padding: 50px 20px; /* Reduce the padding to make the hero section smaller */
     position: relative;
-    margin-bottom: 0;
 }
 
 .hero::before {
@@ -47,7 +47,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 123, 255, 0.1);
+    background-color: rgba(0, 123, 255, 0.3);
     z-index: 1;
 }
 
@@ -57,47 +57,39 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.5rem; /* Adjust font size to make it fit better */
     font-weight: bold;
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 1.25rem; /* Adjust font size for description */
     margin-bottom: 20px;
 }
 
-/* --- Cards Section --- */
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 15px; /* Smaller padding on mobile screens */
+    }
+    
+    .hero h1 {
+        font-size: 2rem; /* Smaller heading on mobile */
+    }
 
-/* Flexbox container to make cards the same height */
-.card-deck {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    .hero p {
+        font-size: 1rem;
+    }
 }
 
-/* Ensure the cards expand equally */
+/* --- Cards Section --- */
 .card {
-    flex: 1;
-    margin: 10px;
     transition: transform 0.2s, box-shadow 0.2s;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    margin-bottom: 30px;
     text-align: center;
-}
-
-/* Adjust icons and text within the cards */
-.card .icon {
-    font-size: 2.5rem;
-    color: #007bff;
-    margin-bottom: 10px;
 }
 
 .card:hover {
@@ -105,63 +97,94 @@ nav a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Card Title */
+.card i {
+    color: #007BFF;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
 .card-title {
     font-size: 1.4rem;
     color: #007BFF;
     font-weight: bold;
 }
 
-/* Adjust text size on mobile */
-@media (max-width: 768px) {
-    .card {
-        flex-direction: column;
-    }
-
-    .card-title {
-        font-size: 1.3rem;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
+.card-text {
+    color: #555;
+    font-size: 1.1rem;
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .card-title {
-        font-size: 1.3rem;
-    }
-
-    .card-text {
-        font-size: 1rem;
-    }
-
-    .card img {
-        max-width: 40px;
-    }
-}
-
-/* --- Footer Section --- */
+/* --- Footer Styles --- */
 footer {
-    background-color: #343a40;
+    background-color: #2c3e50;
+    padding: 40px 0;
     color: white;
-    padding: 30px 0;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+footer .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .btn-outline-light {
+    border-radius: 50%;
+    margin: 5px;
+}
+
+footer .btn-social {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
     text-align: center;
 }
 
-footer a {
-    color: #FFD700;
-    text-decoration: none;
-    margin: 0 10px;
+footer .blockquote {
+    font-size: 1rem;
+    font-style: italic;
+    color: #ecf0f1;
+    margin-top: 10px;
+    border: none;
+    background: transparent;
 }
 
 footer a:hover {
-    color: #00bfff;
+    color: #f1c40f !important;
 }
 
-footer .blockquote {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #ccc;
+/* Footer Columns Layout */
+.footer-column {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-column div {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    footer .row>div {
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
 }

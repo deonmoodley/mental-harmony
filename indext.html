@@ -9,36 +9,41 @@
     <!-- Webpage title -->
     <title>Mental Harmony</title>
 
-    <!-- Including Bootstrap 4.1.3 CSS for responsive design -->
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS for responsiveness -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-    <!-- Linking to the custom CSS file for styles -->
+    <!-- Custom CSS file link -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- Google Fonts for typography -->
+    <!-- Google Fonts for custom typography -->
     <link href="https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar Section -->
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- Navbar brand for the website title -->
-        <a class="navbar-brand" href="#">Mental Harmony</a>
-
-        <!-- Toggler for mobile view (hamburger icon) -->
+        <a class="navbar-brand" href="#">
+            <img src="assets/favicon/logo.png" alt="Mental Harmony Logo" width="40" height="40" class="d-inline-block align-top">
+            Mental Harmony
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Collapsible menu for navigation links -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <!-- Links to different sections of the page -->
                 <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#tips">Mental Health Tips</a></li>
                 <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
@@ -46,12 +51,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Bootstrap Jumbotron and Background Image -->
+    <!-- Hero Section -->
     <section id="hero" class="jumbotron text-center hero">
         <div class="content">
-            <!-- Main heading for the hero section -->
             <h1 class="display-4">Welcome to Mental Harmony</h1>
-            <!-- Brief introductory description -->
             <p class="lead">Your peace of mind starts here. Learn how to manage your mental health.</p>
         </div>
     </section>
@@ -59,33 +62,30 @@
     <!-- Mental Health Tips Section -->
     <section id="tips" class="container py-5">
         <div class="row">
-            <!-- Card 1: Take Breaks -->
             <div class="col-md-4">
-                <div class="card shadow-sm border-0 rounded-lg">
-                    <div class="card-body text-center">
-                        <i class="fas fa-pause-circle fa-3x text-primary mb-3"></i> <!-- Font Awesome icon -->
+                <div class="card shadow-sm border-0 rounded-lg text-center">
+                    <div class="card-body">
+                        <i class="fas fa-pause-circle fa-3x mb-3"></i>
                         <h5 class="card-title">Take Breaks</h5>
                         <p class="card-text">Regular breaks can help clear your mind and reduce stress.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 2: Exercise -->
             <div class="col-md-4">
-                <div class="card shadow-sm border-0 rounded-lg">
-                    <div class="card-body text-center">
-                        <i class="fas fa-dumbbell fa-3x text-primary mb-3"></i> <!-- Font Awesome icon -->
+                <div class="card shadow-sm border-0 rounded-lg text-center">
+                    <div class="card-body">
+                        <i class="fas fa-dumbbell fa-3x mb-3"></i>
                         <h5 class="card-title">Exercise</h5>
                         <p class="card-text">Physical activity can boost your mood and reduce anxiety.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Card 3: Stay Connected -->
             <div class="col-md-4">
-                <div class="card shadow-sm border-0 rounded-lg">
-                    <div class="card-body text-center">
-                        <i class="fas fa-users fa-3x text-primary mb-3"></i> <!-- Font Awesome icon -->
+                <div class="card shadow-sm border-0 rounded-lg text-center">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-3x mb-3"></i>
                         <h5 class="card-title">Stay Connected</h5>
                         <p class="card-text">Talking to friends and family can help you feel supported.</p>
                     </div>
@@ -94,27 +94,44 @@
         </div>
     </section>
 
-    <!-- Footer Section with resources and motivational quotes -->
-    <footer id="resources" class="footer mt-auto py-3 bg-dark">
-        <div class="container text-center text-light">
-            <!-- Title for external resources section -->
-            <p>Mental Health Resources:</p>
-            <!-- Links to external mental health resources, styled as Bootstrap buttons -->
-            <a href="https://www.mind.org.uk/" target="_blank" class="btn btn-primary">Mind</a>
-            <a href="https://www.nhs.uk/mental-health/" target="_blank" class="btn btn-primary">NHS Mental Health</a>
+    <!-- Footer Section with Resources, Quote, and Social Links -->
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container">
+            <div class="row footer-column">
+                <!-- Mental Health Resources Column -->
+                <div>
+                    <h5>Mental Health Resources:</h5>
+                    <a href="https://www.mind.org.uk" target="_blank" class="btn btn-primary">Mind</a>
+                    <a href="https://www.nhs.uk" target="_blank" class="btn btn-primary">NHS Mental Health</a>
+                </div>
 
-            <!-- Motivational quote -->
-            <blockquote class="blockquote text-center mt-3">
-                <p class="mb-0">"You are stronger than you think."</p>
-                <footer class="blockquote-footer">Anonymous</footer>
-            </blockquote>
+                <!-- Quote Column -->
+                <div>
+                    <blockquote class="blockquote text-light">
+                        <p>"You are stronger than you think."</p>
+                        <footer class="blockquote-footer text-light">— Anonymous</footer>
+                    </blockquote>
+                </div>
+
+                <!-- Social Media Icons Column -->
+                <div>
+                    <h5>Follow Us:</h5>
+                    <a href="https://www.facebook.com" target="_blank" class="btn btn-outline-light btn-social"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.x.com" target="_blank" class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" class="btn btn-outline-light btn-social"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com" target="_blank" class="btn btn-outline-light btn-social"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS and dependencies for interactivity -->
+    <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 
 </html>
