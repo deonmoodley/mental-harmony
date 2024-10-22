@@ -1,14 +1,13 @@
 /* --- Global Styles --- */
 
-/* Apply a simple and clean font for the body */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-    background-color: #f5f5f5; /* Light background for a calming feel */
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
 
-/* Set a decorative font for headings */
+/* Styling for headings */
 h1,
 h2,
 h3 {
@@ -16,51 +15,35 @@ h3 {
 }
 
 /* --- Navigation Bar --- */
-
-/* Style the navbar with a primary blue color */
 nav {
-    background-color: #007BFF; /* Bootstrap primary blue */
+    background-color: #007BFF;
 }
 
-/* Navbar links styling with proper spacing */
 nav a {
-    color: #fff; /* White text for better contrast */
-    padding: 10px 15px; /* Spacing around links */
-    text-decoration: none; /* No underline */
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
 }
 
-/* Navbar hover effects */
 nav a:hover {
-    color: #FFD700; /* Gold color on hover */
-    text-decoration: underline; /* Underline on hover for clarity */
+    color: #FFD700;
+    text-decoration: underline;
 }
 
 /* --- Hero Section --- */
-
-/* Hero section with a calming beach background image */
 .hero {
-    background-image: url(../images/beach.jpg); /* Current beach background */
-    background-size: cover; /* Ensure the image covers the entire section */
-    background-position: center; /* Center the background image */
-    color: white; /* White text for readability */
+    background-image: url('../images/beach.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-align: center;
-    padding: 100px 20px;
-    position: relative; /* For overlay effects */
+    padding: 80px 20px 50px 20px;
+    /* Adjusted bottom padding to minimize space */
+    position: relative;
+    margin-bottom: 0;
 }
 
-/* Main heading in the hero section with proper font size */
-.hero h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-/* Hero paragraph with larger font size for readability */
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-/* Semi-transparent overlay for better text readability */
+/* Lighten the overlay */
 .hero::before {
     content: "";
     position: absolute;
@@ -68,93 +51,89 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 123, 255, 0.5); /* Semi-transparent blue overlay */
-    z-index: 1; /* Ensures the overlay is behind the text */
+    background-color: rgba(0, 123, 255, 0.2);
+    z-index: 1;
 }
 
-/* Ensuring hero text stays above the overlay */
 .hero .content {
     position: relative;
-    z-index: 2; /* Ensures the text is above the overlay */
+    z-index: 2;
 }
 
-/* --- Cards Section (Mental Health Tips) --- */
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
 
-/* Style the cards with shadow, padding, and rounded corners */
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* --- Cards Section --- */
+.card-container {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+    /* Adjusted top padding to reduce the gap */
+    margin-top: 0;
+}
+
 .card {
-    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition on hover */
-    padding: 20px; /* Extra padding for spacious feel */
-    background-color: #fff; /* White background for contrast */
-    border-radius: 15px; /* Soft rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    margin-bottom: 20px; /* Space between cards */
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
-/* Card hover effect to enlarge and deepen the shadow */
 .card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepen the shadow on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Style the card titles with large, clear fonts and Bootstrap blue */
 .card-title {
-    font-size: 1.4rem; /* Large, clear title */
-    color: #007BFF; /* Bootstrap primary blue for emphasis */
-    font-weight: bold; /* Make title stand out */
+    font-size: 1.4rem;
+    color: #007BFF;
+    font-weight: bold;
 }
 
-/* Softer text color for card descriptions */
 .card-text {
-    color: #555; /* Softer text color for readability */
-    font-size: 1.1rem; /* Slightly larger text */
+    color: #555;
+    font-size: 1.1rem;
 }
 
-/* --- Footer Section --- */
-
-/* Dark gray background for the footer */
-footer {
-    background-color: #343a40; /* Dark gray background for footer */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Gold footer links and spacing between them */
-footer a {
-    color: #FFD700; /* Gold links in footer */
-    text-decoration: none; /* No underline */
-    margin: 0 10px; /* Spacing between links */
-}
-
-/* Footer links hover effects */
-footer a:hover {
-    color: #00bfff; /* Light blue on hover */
-}
-
-/* Footer blockquote styling for quotes */
-footer .blockquote {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #ccc; /* Lighter text for motivational quote */
-}
-
-/* --- Responsive Design --- */
-
-/* Responsive styles for smaller screens */
+/* Adjust margins and card spacing on smaller screens */
 @media (max-width: 768px) {
-    .card {
-        margin-bottom: 15px; /* Add more space between cards */
-    }
-
-    .hero h1 {
-        font-size: 2.5rem; /* Reduce hero heading size on smaller screens */
-    }
-
     .card-title {
-        font-size: 1.3rem; /* Reduce title size on smaller screens */
+        font-size: 1.3rem;
     }
 
     .card-text {
-        font-size: 1rem; /* Adjust card text size for mobile */
+        font-size: 1rem;
     }
+}
+
+/* --- Footer Section --- */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #00bfff;
+}
+
+footer .blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ccc;
 }
