@@ -1,23 +1,22 @@
-/* Global font for body */
+/* Global font family for the entire page */
 body {
     font-family: 'Open Sans', Arial, sans-serif;
-}
-
-/* Specific font for headings */
-h1,
-h2,
-h3 {
+  }
+  
+  /* Custom font for all headings (h1, h2, h3) */
+  h1, h2, h3 {
     font-family: 'Merienda One', 'Brush Script MT', cursive;
-}
-
-/* Navbar link styles */
-.navbar-nav .nav-link {
-    color: #000;
-    /* Black text */
-    padding: 10px 15px;
-}
-
-/* Navbar hover effect */
-.navbar-nav .nav-link:hover {
-    color: #007BFF;
-}
+  }
+  
+  /* Custom font size for the main hero section title */
+  .jumbotron h1 {
+    font-size: 3rem; /* Makes the hero section title large */
+  }
+  
+  /* Navigation bar link styles */
+  .navbar-nav .nav-link {
+    color: #000; /* Black text for nav links */
+    padding: 10px 15px; /* Adds padding around the links */
+  }
+  
+ 
